@@ -5,7 +5,6 @@ function index_change_reaction(){
 
 function initialize_BOKEH_GLOBALS(source, JSON_aux){
 	if(typeof BOKEH_GLOBALS != "undefined"){return;} // Already exists, don't rerun the initialization
-	if(window.location.port == ""){alert("It appears you're viewing this document from your filesystem. You should open this page from a server, eg localhost, so that the windows can communicate properly.\nYou can start a server with the command 'python3 -m http.server 8000'");} 
 	BOKEH_GLOBALS = Object();
 
 	// ColumnDataSource
